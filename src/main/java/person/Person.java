@@ -36,6 +36,10 @@ public class Person
 	{
 		return firstName + " " + lastName;
 	}
+	public String getIndexName()
+	{
+		return lastName + ", " + firstName;
+	}
 	
 	public int getAge()
 	{
@@ -45,6 +49,6 @@ public class Person
 	@Override
 	public String toString()
 	{
-		return "{Person} {firstName: ["+firstName+"], lastName: ["+lastName+"], age: ["+age+"]}";
+		return "{Person} {firstName: ["+firstName+"], lastName: ["+lastName+"], age: ["+age+"], getFullName(): ["+getFullName()+"], getIndexName: ["+getIndexName()+"]}";
 	}
 }
