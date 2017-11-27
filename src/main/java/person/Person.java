@@ -40,6 +40,10 @@ public class Person
 	{
 		return lastName + ", " + firstName;
 	}
+	public String label()
+	{
+		return getIndexName() + ". " + age;
+	}
 	
 	public int getAge()
 	{
