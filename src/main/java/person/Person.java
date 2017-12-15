@@ -7,7 +7,6 @@ package person;
 public class Person
 {
 	
-	// ----- Label -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
