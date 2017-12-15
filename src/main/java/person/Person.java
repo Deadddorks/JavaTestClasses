@@ -4,8 +4,6 @@ package person;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-import java.util.Objects;
-
 public class Person
 {
 	
@@ -23,6 +21,7 @@ public class Person
 	{
 		this.firstName = firstName;
 		this.lastName = lastName;
+		
 		this.age = age;
 	}
 	
@@ -56,29 +55,6 @@ public class Person
 	public String toString()
 	{
 		return "{Person} {firstName: ["+firstName+"], lastName: ["+lastName+"], age: ["+age+"], getFullName(): ["+getFullName()+"], getIndexName: ["+getIndexName()+"]}";
-	}
-	
-	@Override
-	public boolean equals(Object obj)
-	{
-		if (this == obj)
-		{
-			return true;
-		}
-		if (!(obj instanceof Person))
-		{
-			return false;
-		}
-		
-		Person otherPerson = (Person) obj;
-		
-		return Objects.equals(firstName, otherPerson.firstName) && Objects.equals(lastName, otherPerson.lastName) && Objects.equals(age, otherPerson.age);
-	}
-	
-	@Override
-	public int hashCode()
-	{
-		return Objects.hash(firstName, lastName, age);
 	}
 	
 }
